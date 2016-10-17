@@ -87,13 +87,16 @@ document.write(buscar_numeros_primos(4) + "<br>");
 document.write(buscar_numeros_primos(71) + "<br>");
 document.write(buscar_numeros_primos(7) + "<br>");
 
-/*ejercicio #9 "multiplos de un numero"
+//ejercicio #9 "multiplos de un numero"
 function multiplos (num){
-	var contador= 1;
+	var arrayMultiplos= [];
 	for( var i=1; i<=num; i++){
-			return (contador*i);
+			var tem =(num*i);
+			arrayMultiplos.push(tem);
 		}
-document.write(multiplos(4));*/
+		return arrayMultiplos;
+	}
+document.write(multiplos(4) + "<br>");
 
 //ejercicio 10 Cantidad de digitos
 function cantidad_digitos (num){
